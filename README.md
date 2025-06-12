@@ -69,20 +69,20 @@ This section provides step-by-step instructions to get started with the Backtest
 ## Project Structure
    ```bash
    my-backtest-strategies/  
-   ├── notebooks/                # Jupyter/Colab notebooks  
+   ├── notebooks/              
    │   └── Common_strategy.ipynb  
    ├── LICNESE
-   ├── .gitignore                # Ignored files (envs, caches)  
-   └── README.md                 # Project overview and instructions
-
+   ├── .gitignore            
+   └── README.md         
+ 
 ## License
-**Key citations:**  
-- GitHub README conventions (what to include) :contentReference[oaicite:11]{index=11}  
-- Table of Contents auto-generation in GitHub UI :contentReference[oaicite:12]{index=12}  
-- “Best README Template” for structure inspiration :contentReference[oaicite:13]{index=13}  
-- Jehna’s README best-practices for features section :contentReference[oaicite:14]{index=14}  
-- Hatica’s tips for visual elements/badges :contentReference[oaicite:15]{index=15}  
-- Reddit guidance on README content and code snippets :contentReference[oaicite:16]{index=16}  
-- Medium best practices for keeping docs updated and appealing :contentReference[oaicite:17]{index=17}  
-- ChooseALicense.com instructions for MIT license :contentReference[oaicite:18]{index=18}
-::contentReference[oaicite:19]{index=19}
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) :contentReference[oaicite:0]{index=0}
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for full terms. :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}
+
+Most repositories place their license text in a `LICENSE` (or `LICENSE.md`) file at the root of the repo. :contentReference[oaicite:3]{index=3}
+
+<details>
+<summary>Click to expand the full license text</summary>
+
