@@ -1,7 +1,7 @@
 # Backtest Strategies Framework  
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)]()  
 
-A modular engine for backtesting financial trading strategies with clear separation of data handling, strategy logic, execution simulation, and performance analytics – ideal for researchers and developers alike. :contentReference[oaicite:0]{index=0}  
+A modular engine for backtesting financial trading strategies with clear separation of data handling, strategy logic, execution simulation, and performance analytics – ideal for researchers and developers alike.
 
 ## Table of Contents  
 - [About The Project](#about-the-project)  
@@ -10,15 +10,13 @@ A modular engine for backtesting financial trading strategies with clear separat
 - [Usage](#usage)  
 - [Project Structure](#project-structure) 
 
-> Click the ☰ icon on GitHub to auto-generate this TOC for easy navigation.
-
 ## About The Project  
 This framework provides:  
 1. **DataHandler** that streams historical OHLCV data for one or more instruments.  
 2. **Strategy** interface for implementing SMA/EMA crossovers, RSI triggers, drawdown-based rules, and more.  
 3. **Portfolio** and **ExecutionHandler** modules simulating realistic order fills, slippage, and commissions.  
 4. **Performance** analytics offering cumulative returns.
-These components form a cohesive backtesting pipeline inspired by industry templates. :contentReference[oaicite:2]{index=2}  
+These components form a cohesive backtesting pipeline inspired by industry templates.
 
 ## Features  
 - Single- and multi-asset support  
@@ -41,10 +39,10 @@ These components form a cohesive backtesting pipeline inspired by industry templ
    pip install -r requirements.txt
 
 ## Usage
-This section provides step-by-step instructions to get started with the Backtest Strategies Framework, including launching notebooks, running backtests via CLI, using the Python API, configuring via files, running tests, and troubleshooting. :contentReference[oaicite:0]{index=0}
+This section provides step-by-step instructions to get started with the Backtest Strategies Framework, including launching notebooks, running backtests via CLI, using the Python API, configuring via files, running tests, and troubleshooting.
 
 1. **Launch the example notebook**  
-   Start the Jupyter Notebook server in the project root and open the notebook located at `notebooks/Common_strategy.ipynb`. :contentReference[oaicite:1]{index=1}  
+   Start the Jupyter Notebook server in the project root and open the notebook located at `notebooks/Common_strategy.ipynb`.
    ```bash
    jupyter notebook notebooks/Common_strategy.ipynb
 
@@ -55,7 +53,7 @@ This section provides step-by-step instructions to get started with the Backtest
    --fast-window 45 \
    --slow-window 180 \
    --start-date 2015-01-01 \ 
-   --end-date 2024-12-31 \
+   --end-date 2024-12-31
    
 3. **Use the Python API**
    Import the core classes from src/backtest.py and instantiate your data handler, backtest engine, and strategy to programmatically execute backtests.
