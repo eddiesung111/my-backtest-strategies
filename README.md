@@ -9,9 +9,9 @@ A modular engine for backtesting financial trading strategies with clear separat
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Project Structure](#project-structure)  
-- [License](#license)  
+- [License](#license)
 
-> **Auto-generated TOC** on GitHub when you click the table-of-contents icon – perfect for quick navigation. :contentReference[oaicite:1]{index=1}  
+> Click the ☰ icon on GitHub to auto-generate this TOC for easy navigation.
 
 ## About The Project  
 This framework provides:  
@@ -22,20 +22,26 @@ This framework provides:
 These components form a cohesive backtesting pipeline inspired by industry templates. :contentReference[oaicite:2]{index=2}  
 
 ## Features  
-- **Single- and multi-asset support**  
-- **Vectorized indicators** for high performance :contentReference[oaicite:3]{index=3}  
-- **Modular design** enabling plug-and-play strategies and broker models  
-- **CI integration** with GitHub Actions for automated testing on every push :contentReference[oaicite:4]{index=4}  
-- **Jupyter Notebooks** showcasing example strategies in `notebooks/Common_strategy.ipynb` :contentReference[oaicite:5]{index=5}  
+- Single- and multi-asset support  
+- Vectorized indicators for high performance  
+- Modular design for plug-and-play strategies  
+- CI integration with GitHub Actions  
+- Example Jupyter notebooks in `notebooks/`
 
 ## Installation  
-1. Clone the repo:  
+1. Clone the repository:  
    ```bash
    git clone https://github.com/eddiesung111/my-backtest-strategies.git
    cd my-backtest-strategies
+2. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   python3 -m venv .env
+   source .env/bin/activate
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage
-
 This section provides step-by-step instructions to get started with the Backtest Strategies Framework, including launching notebooks, running backtests via CLI, using the Python API, configuring via files, running tests, and troubleshooting. :contentReference[oaicite:0]{index=0}
 
 1. **Launch the example notebook**  
@@ -46,7 +52,13 @@ This section provides step-by-step instructions to get started with the Backtest
 2. **Run a backtest from the command line**
    Execute the backtest.py script with flags to specify the symbol, strategy, indicator parameters, and date range. 
    ```bash
-   python src/backtest.py --symbol AAPL --strategy sma --fast-window 45 --slow-window 180 --start-date 2015-01-01 --end-date 2024-12-31
+   python src/backtest.py \
+  --symbol AAPL \
+  --strategy sma \
+  --fast-window 45 \
+  --slow-window 180 \
+  --start-date 2015-01-01 \
+  --end-date 2024-12-31
 
 3. **Use the Python API**
    Import the core classes from src/backtest.py and instantiate your data handler, backtest engine, and strategy to programmatically execute backtests.
@@ -73,8 +85,8 @@ This section provides step-by-step instructions to get started with the Backtest
    │   └── Common_strategy.ipynb  
    ├── LICNESE
    ├── .gitignore            
-   └── README.md         
- 
+   └── README.md
+   ```
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) :contentReference[oaicite:0]{index=0}
