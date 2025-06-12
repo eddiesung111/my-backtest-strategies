@@ -67,12 +67,13 @@ This section provides step-by-step instructions to get started with the Backtest
 
 
 ## Project Structure
-my-backtest-strategies/  
-├── notebooks/                # Jupyter/Colab notebooks  
-│   └── Common_strategy.ipynb  
-├── LICNESE
-├── .gitignore                # Ignored files (envs, caches)  
-└── README.md                 # Project overview and instructions
+   ```bash
+   my-backtest-strategies/  
+   ├── notebooks/                # Jupyter/Colab notebooks  
+   │   └── Common_strategy.ipynb  
+   ├── LICNESE
+   ├── .gitignore                # Ignored files (envs, caches)  
+   └── README.md                 # Project overview and instructions
 
 ## License
 **Key citations:**  
