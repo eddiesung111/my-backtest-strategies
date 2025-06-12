@@ -8,8 +8,7 @@ A modular engine for backtesting financial trading strategies with clear separat
 - [Features](#features)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [License](#license)
+- [Project Structure](#project-structure) 
 
 > Click the ☰ icon on GitHub to auto-generate this TOC for easy navigation.
 
@@ -52,14 +51,12 @@ This section provides step-by-step instructions to get started with the Backtest
 2. **Run a backtest from the command line**
    Execute the backtest.py script with flags to specify the symbol, strategy, indicator parameters, and date range. 
    ```bash
-   python src/backtest.py \
-  --symbol AAPL \
-  --strategy sma \
-  --fast-window 45 \
-  --slow-window 180 \
-  --start-date 2015-01-01 \
-  --end-date 2024-12-31
-   ```
+   python src/backtest.py --symbol AAPL  --strategy sma \
+   --fast-window 45 \
+   --slow-window 180 \
+   --start-date 2015-01-01 \ 
+   --end-date 2024-12-31 \
+   
 3. **Use the Python API**
    Import the core classes from src/backtest.py and instantiate your data handler, backtest engine, and strategy to programmatically execute backtests.
    ```python
@@ -87,26 +84,3 @@ This section provides step-by-step instructions to get started with the Backtest
    ├── .gitignore            
    └── README.md
    ```
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) :contentReference[oaicite:0]{index=0}  
-This project is licensed under the [MIT License](LICENSE) – see the `LICENSE` file for full terms. :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}  
-
-Most repositories place their license text in a `LICENSE` (or `LICENSE.md`) file at the root of the repo, which GitHub will automatically detect and display. :contentReference[oaicite:3]{index=3}
-
-<details>
-  <summary>Full MIT License Text</summary>
-
-  ```text
-  MIT License
-
-  Copyright (c) 2025 Your Name
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the “Software”), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  [rest of your license text…]
