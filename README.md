@@ -9,7 +9,6 @@ A modular engine for backtesting financial trading strategies with clear separat
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Project Structure](#project-structure) 
-- [Contributing](#-contributing)
 - [License](#-license)
 
 ## About The Project  
@@ -84,9 +83,6 @@ This section provides step-by-step instructions to get started with the Backtest
    ├── .gitignore            
    └── README.md
    ```
-## 🤝 Contributing
-
-Contributions are welcome\! Please see the relevant documentation in the `docs/` directory for guidelines on how to contribute.
 
 ## 📄 License
 
