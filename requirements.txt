@@ -1,0 +1,18 @@
+# Core data analysis
+pandas>=1.5.0                # Fast, flexible data structures and analysis tools :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
+
+# Visualization
+plotly>=6.0.0                # Interactive, declarative charting library :contentReference[oaicite:2]{index=2}
+
+# Financial data access
+stockdex>=1.0.6              # Simple interface to Yahoo Finance, Macrotrends, etc. :contentReference[oaicite:3]{index=3}
+
+# Date parsing (used by pandas)
+python-dateutil>=2.8.0       # Powerful extensions to the standard datetime module :contentReference[oaicite:4]{index=4}
+
+# Testing
+pytest>=8.0.0                # Framework for writing small and scalable tests :contentReference[oaicite:5]{index=5}
+
+# (Optional) Pin dev-only tools separately:
+# - pip install -r dev-requirements.txt :contentReference[oaicite:6]{index=6}
+
