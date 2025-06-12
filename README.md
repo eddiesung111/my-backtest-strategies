@@ -9,7 +9,7 @@ A modular engine for backtesting financial trading strategies with clear separat
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Project Structure](#project-structure)  
-- [License](#Licnese)  
+- [License](#license)  
 
 > **Auto-generated TOC** on GitHub when you click the table-of-contents icon – perfect for quick navigation. :contentReference[oaicite:1]{index=1}  
 
@@ -45,14 +45,14 @@ This section provides step-by-step instructions to get started with the Backtest
 
 2. **Run a backtest from the command line**
    Execute the backtest.py script with flags to specify the symbol, strategy, indicator parameters, and date range. 
+   ```bash
    python src/backtest.py --symbol AAPL --strategy sma --fast-window 45 --slow-window 180 --start-date 2015-01-01 --end-date 2024-12-31
 
 3. **Use the Python API**
    Import the core classes from src/backtest.py and instantiate your data handler, backtest engine, and strategy to programmatically execute backtests.
-   '''bash
+   ```python
    from src.backtest import DataHandler, Backtest, SMA, Portfolio, ExecutionHandler
-   '''
-'''python
+
    dh = DataHandler("data/AAPL.csv")
    bt = Backtest(
       data_handler=dh,
@@ -64,7 +64,6 @@ This section provides step-by-step instructions to get started with the Backtest
    )
    equity_curve = bt.run()
    print(equity_curve)
-'''
 
 
 ## Project Structure
