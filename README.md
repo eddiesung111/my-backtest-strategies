@@ -86,4 +86,4 @@ This section provides step-by-step instructions to get started with the Backtest
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://www.google.com/search?q=LICENSE).
+This project is licensed under the [MIT License](https://github.com/eddiesung111/my-backtest-strategies/blob/main/LICENSE).
