@@ -76,7 +76,7 @@ This section provides step-by-step instructions to get started with the Backtest
 
 ## Project Structure
    ```bash
-   my-backtest-strategies/  
+   .
    ├── notebooks/              
    │   └── Common_strategy.ipynb  
    ├── LICNESE
