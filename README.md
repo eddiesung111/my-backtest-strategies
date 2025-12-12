@@ -75,6 +75,9 @@ This section provides step-by-step instructions to get started with the Backtest
 
 
 ## Project Structure
+
+```
+
 .
 ├── notebooks/              
 │   └── Common_strategy.ipynb  
@@ -84,6 +87,7 @@ This section provides step-by-step instructions to get started with the Backtest
 ├── LICENSE
 ├── .gitignore            
 └── README.md
+```
 
 ## 📄 License
 
