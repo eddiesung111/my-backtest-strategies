@@ -3,35 +3,35 @@
 
 A modular engine for backtesting financial trading strategies with clear separation of data handling, strategy logic, execution simulation, and performance analytics – ideal for researchers and developers alike.
 
-## Table of Contents  
-- [About The Project](#about-the-project)  
-- [Features](#features)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure) 
-- [License](#-license)
+## 📖 Table of Contents
+* [About The Project](#about-the-project)
+* [Features](#features)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Project Structure](#project-structure)
+* [License](#license)
 
-## About The Project  
-This framework provides:  
-1. **DataHandler** that streams historical OHLCV data for one or more instruments.  
-2. **Strategy** interface for implementing SMA/EMA crossovers, RSI triggers, drawdown-based rules, and more.  
-3. **Portfolio** and **ExecutionHandler** modules simulating realistic order fills, slippage, and commissions.  
-4. **Performance** analytics offering cumulative returns.
-These components form a cohesive backtesting pipeline inspired by industry templates.
+## 🔎 About The Project
 
-## Features  
-- Single- and multi-asset support  
-- Vectorized indicators for high performance  
-- Modular design for plug-and-play strategies  
-- CI integration with GitHub Actions  
-- Example Jupyter notebooks in `notebooks/`
+This framework provides a cohesive backtesting pipeline inspired by industry templates:
+* **`DataHandler`**: Streams historical OHLCV data for one or more instruments.
+* **`Strategy`**: Interface for implementing SMA/EMA crossovers, RSI triggers, drawdown-based rules, and more.
+* **`Portfolio` & `ExecutionHandler`**: Modules simulating realistic order fills, slippage, and commissions.
+* **`Performance`**: Analytics offering cumulative returns and risk metrics.
+
+## 🚀 Features
+* **Multi-Asset Support:** Handles single and multi-asset portfolios.
+* **Vectorized Indicators:** High-performance calculation using Pandas/Numpy.
+* **Modular Design:** Plug-and-play architecture for swapping strategies.
+* **CI Integration:** GitHub Actions ready.
+* **Jupyter Ready:** Example notebooks included in `notebooks/`.
 
 ## Installation  
 1. Clone the repository:  
    ```bash
    git clone https://github.com/eddiesung111/my-backtest-strategies.git
    cd my-backtest-strategies
-2. Create and activate a virtual environment (optional but recommended):
+2. Create and activate a virtual environment:
    ```bash
    python3 -m venv .env
    source .env/bin/activate
@@ -43,12 +43,12 @@ These components form a cohesive backtesting pipeline inspired by industry templ
 This section provides step-by-step instructions to get started with the Backtest Strategies Framework, including launching notebooks, running backtests via CLI, using the Python API, configuring via files, running tests, and troubleshooting.
 
 1. **Launch the example notebook**  
-   Start the Jupyter Notebook server in the project root and open the notebook located at `notebooks/Common_strategy.ipynb`.
+   Start the Jupyter Notebook server and open notebooks/Common_strategy.ipynb:
    ```bash
    jupyter notebook notebooks/Common_strategy.ipynb
 
-2. **Run a backtest from the command line**
-   Execute the backtest.py script with flags to specify the symbol, strategy, indicator parameters, and date range. 
+2. **Run from Command Line (CLI)**
+   Execute the backtest.py script with flags to specify symbol and strategy parameters:
    ```bash
    python src/backtest.py --symbol AAPL  --strategy sma \
    --fast-window 45 \
@@ -57,7 +57,7 @@ This section provides step-by-step instructions to get started with the Backtest
    --end-date 2024-12-31
    
 3. **Use the Python API**
-   Import the core classes from src/backtest.py and instantiate your data handler, backtest engine, and strategy to programmatically execute backtests.
+   Import core classes to run backtests programmatically:
    ```python
    from src.backtest import DataHandler, Backtest, SMA, Portfolio, ExecutionHandler
 
@@ -75,15 +75,16 @@ This section provides step-by-step instructions to get started with the Backtest
 
 
 ## Project Structure
-   ```bash
    .
    ├── notebooks/              
    │   └── Common_strategy.ipynb  
-   ├── LICNESE
+   ├── src/
+   │   ├── backtest.py
+   │   └── strategies/
+   ├── LICENSE
    ├── .gitignore            
    └── README.md
-   ```
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://github.com/eddiesung111/my-backtest-strategies/blob/main/LICENSE).
+This project is licensed under the MIT License.
