@@ -77,13 +77,9 @@ This section provides step-by-step instructions to get started with the Backtest
 ## Project Structure
 
 ```
-
 .
 ├── notebooks/              
 │   └── Common_strategy.ipynb  
-├── src/
-│   ├── backtest.py
-│   └── strategies/
 ├── LICENSE
 ├── .gitignore            
 └── README.md
